@@ -4,194 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <style>
+            #flex-container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+            .flex-item{
+                height: 100px;
+                border: 1px solid red;
+                width: 100%;
+                margin: 10px;
+                background-color: green;
+
+            }
+
+
+            @media only screen and (max-width:768px)
+            {
+                .flex-item{
+                width: 47%;
+                background-color: blueviolet;
+                
+            }
+
+            }
+
+            @media only screen and (max-width:1200px)
+            {
+                .flex-item{
+                width: 23%;
+                background-color: aquamarine;
+            } 
+            }
+
+
+    </style>
 </head>
 <body>
-
-    <section id="container">
-          
-        <header>
-            <section id="header">
-                <div>
-                    <img src="https://organicindia.com/cdn/shop/files/logo_120x80_e4eac21f-db47-4eab-8bac-8e0befb2e235.png?v=1666268578" alt="">
-                </div>
-                <div id="navigation">
-                    <nav>
-                        <a href="">Home</a>
-                        <a href="about.html">About</a>
-                        <a href="">Home</a>
-                        <a href="">Home</a>
-                    </nav>
-                </div>
-                <div>
-                    <i class="fas fa-search"></i>
-                    <i class="fas fa-search"></i>
-                    <i class="fas fa-search"></i>
-                </div>
-            </section>
-        </header>   
-
-        <main>
-                 <section id="herosection">
-                    <div class="hero-item">
-                        <img src="https://organicindia.com/cdn/shop/files/Winter-Offer_Banner_creative__1920x800-01.jpg?v=1731390103" alt="">
-                    </div>
-                 </section>
-
-
-                 <section id="product">
-                    <div class="product-item">
-                        <img src="https://organicindia.com/cdn/shop/files/Tea-_-infusions.jpg?v=1676028270" alt="">
-                        <h3>Teas & Infusions</h3>
-                    </div>
-                    <div class="product-item">
-                        <img src="https://organicindia.com/cdn/shop/files/Tea-_-infusions.jpg?v=1676028270" alt="">
-                        <h3>Teas & Infusions</h3>
-                    </div>
-                    <div class="product-item">
-                        <img src="https://organicindia.com/cdn/shop/files/Tea-_-infusions.jpg?v=1676028270" alt="">
-                        <h3>Teas & Infusions</h3>
-                    </div>
-                    <div class="product-item">
-                        <img src="https://organicindia.com/cdn/shop/files/Tea-_-infusions.jpg?v=1676028270" alt="">
-                        <h3>Teas & Infusions</h3>
-                    </div>
-                    <div class="product-item">
-                        <img src="https://organicindia.com/cdn/shop/files/Tea-_-infusions.jpg?v=1676028270" alt="">
-                        <h3>Teas & Infusions</h3>
-                    </div>
-                    <div class="product-item">
-                        <img src="https://organicindia.com/cdn/shop/files/Tea-_-infusions.jpg?v=1676028270" alt="">
-                        <h3>Teas & Infusions</h3>
-                    </div>
-                 </section>
-
-
-                 <section id="selling">
-                    <div id="selling-uni">
-                        <h2>
-                            Best Selling Organic Products</h2>
-                    </div>
-                    <div class="selling-item">
-                        <img src="https://organicindia.com/cdn/shop/files/MoringaHibiscus_558X600_crop_center.jpg?v=1704973806" alt="">
-                        <h3>Some Data</h3>
-                        <p>rs 200</p>
-                        <button>Buy Now</button>
-                    </div>
-                    <div class="selling-item">
-                        <img src="https://organicindia.com/cdn/shop/files/MoringaHibiscus_558X600_crop_center.jpg?v=1704973806" alt="">
-                        <h3>Some Data</h3>
-                        <p>rs 200</p>
-                        <button>Buy Now</button>
-                    </div>
-                    <div class="selling-item">
-                        <img src="https://organicindia.com/cdn/shop/files/MoringaHibiscus_558X600_crop_center.jpg?v=1704973806" alt="">
-                        <h3>Some Data</h3>
-                        <p>rs 200</p>
-                        <button>Buy Now</button>
-                    </div>
-                    <div class="selling-item">
-                        <img src="https://organicindia.com/cdn/shop/files/MoringaHibiscus_558X600_crop_center.jpg?v=1704973806" alt="">
-                        <h3>Some Data</h3>
-                        <p>rs 200</p>
-                        <button>Buy Now</button>
-                    </div>
-                    <div class="selling-item">
-                        <img src="https://organicindia.com/cdn/shop/files/MoringaHibiscus_558X600_crop_center.jpg?v=1704973806" alt="">
-                        <h3>Some Data</h3>
-                        <p>rs 200</p>
-                        <button>Buy Now</button>
-                    </div>
-                 </section>
-
-                 <section id="tulsi">
-
-                    <div class="tulsi-item">
-                        <img src="https://organicindia.com/cdn/shop/files/613X630-tulsi-farm-image.png?v=1666268098" alt="">
-                    </div>
-                    <div class="tulsi-item">
-                        <h2>GET THE ‘TULSI’ WELLNESS EDGE</h2>
-
-                        <div id="parent">
-                            <div class="child1">
-                                <img src="https://organicindia.com/cdn/shop/files/icon-1.png?v=1667396330" alt="">
-                            </div>
-                            <div class="child2">
-                                <h2>GUARD AGAINST COUGH, COLD & POLLUTION</h2>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod molestiae mollitia minus harum laborum dolorem, in sunt quas fugit aliquam velit vel deserunt quia quasi eveniet? Cumque nobis rerum perferendis.</p>
-                            </div>
-                            <div class="child1">
-                                <img src="https://organicindia.com/cdn/shop/files/icon-1.png?v=1667396330" alt="">
-                            </div>
-                            <div class="child2">
-                                <h2>GUARD AGAINST COUGH, COLD & POLLUTION</h2>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod molestiae mollitia minus harum laborum dolorem, in sunt quas fugit aliquam velit vel deserunt quia quasi eveniet? Cumque nobis rerum perferendis.</p>
-                            </div>
-                            <div class="child1">
-                                <img src="https://organicindia.com/cdn/shop/files/icon-1.png?v=1667396330" alt="">
-                            </div>
-                            <div class="child2">
-                                <h2>GUARD AGAINST COUGH, COLD & POLLUTION</h2>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod molestiae mollitia minus harum laborum dolorem, in sunt quas fugit aliquam velit vel deserunt quia quasi eveniet? Cumque nobis rerum perferendis.</p>
-                            </div>
-                        </div>
-                    </div>
-                 </section>
-
-
-                 <section id="healthy">
-                    <div class="healthy-item">
-                        <h2>HEALTHY CONSCIOUS LIVING</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At explicabo similique vel amet aliquam excepturi fugiat inventore eveniet! Nobis libero rerum fuga, suscipit corporis et vitae? Labore asperiores reiciendis deleniti.</p>
-                        <button>SHOP NOW</button>
-                    </div>
-                    <div class="healthy-item">
-                        <img src="https://organicindia.com/cdn/shop/files/1240X1020-Video-Thumbnail_27360147-2798-488b-8763-e27ceca85973.png?v=1676028945" alt="">
-                    </div>
-                 </section>
-        </main>
-
-        <footer>
-             <section id="footer">
-                <div class="ftr">
-                    <ul type="none">
-                        <li>Footer</li>
-                        <li>Footer</li>
-                        <li>Footer</li>
-                        <li>Footer</li>
-                    </ul>
-                </div>
-                <div class="ftr">
-                    <ul type="none">
-                        <li>Footer</li>
-                        <li>Footer</li>
-                        <li>Footer</li>
-                        <li>Footer</li>
-                    </ul>
-                </div>
-                <div class="ftr">
-                    <ul type="none">
-                        <li>Footer</li>
-                        <li>Footer</li>
-                        <li>Footer</li>
-                        <li>Footer</li>
-                    </ul>
-                </div>
-                <div class="ftr">
-                    <ul type="none">
-                        <li>Footer</li>
-                        <li>Footer</li>
-                        <li>Footer</li>
-                        <li>Footer</li>
-                    </ul>
-                </div>
-             </section>
-        </footer>
-
-
-
-    </section>
-    
+       <section id="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+       </section>
 </body>
 </html>
